@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Cybernerdie\ModelActivityLog\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ModelActivityLogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-model-activity-log';
 
     public $description = 'My command';
 
