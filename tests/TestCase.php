@@ -2,9 +2,9 @@
 
 namespace Cybernerdie\ModelActivityLog\Tests;
 
+use Cybernerdie\ModelActivityLog\ModelActivityLogServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Cybernerdie\ModelActivityLog\ModelActivityLogServiceProvider;
 
 class TestCase extends Orchestra
 {

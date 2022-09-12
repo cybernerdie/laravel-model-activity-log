@@ -2,9 +2,9 @@
 
 namespace Cybernerdie\ModelActivityLog;
 
+use Cybernerdie\ModelActivityLog\Commands\ModelActivityLogCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Cybernerdie\ModelActivityLog\Commands\ModelActivityLogCommand;
 
 class ModelActivityLogServiceProvider extends PackageServiceProvider
 {
