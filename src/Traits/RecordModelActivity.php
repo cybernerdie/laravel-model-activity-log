@@ -2,9 +2,9 @@
 
 namespace Cybernerdie\ModelActivityLog\Traits;
 
-use Illuminate\Support\Arr;
-use Illuminate\Database\Eloquent\Model;
 use Cybernerdie\ModelActivityLog\Models\ModelActivityLog;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 
 trait RecordModelActivity
 {
@@ -27,7 +27,7 @@ trait RecordModelActivity
     /**
      * Record activity for the model.
      *
-     * @param  string $event
+     * @param  string  $event
      * @return void
      */
     public function recordActivity($event)
@@ -53,13 +53,14 @@ trait RecordModelActivity
         }
 
         return [
-            'created', 'deleted', 'updated'
+            'created', 'deleted', 'updated',
         ];
     }
 
     /**
      * Fetch the changes to the model.
-     * @param string $event
+     *
+     * @param  string  $event
      * @return array
      */
     protected function activityChanges($event)
@@ -67,7 +68,7 @@ trait RecordModelActivity
         $oldData = Arr::except($this->getOriginal(), static::getModelColumnsToIgnore());
         $attributes = Arr::except($this->getAttributes(), static::getModelColumnsToIgnore());
 
-        $properties['attributes'] =  $attributes;
+        $properties['attributes'] = $attributes;
 
         if ($event == 'updated') {
             $properties['old'] = $oldData;
@@ -81,7 +82,7 @@ trait RecordModelActivity
         return $properties;
     }
 
-     /**
+    /**
      * Get the model columns to ignore.
      *
      * @return array
@@ -93,13 +94,14 @@ trait RecordModelActivity
         }
 
         return [
-            'created_at', 'updated_at', 'deleted_at'
+            'created_at', 'updated_at', 'deleted_at',
         ];
     }
 
-     /**
+    /**
      * Prevent logging event if only ignored attributes are changed
-     * @param string $event
+     *
+     * @param  string  $event
      * @return bool
      */
     protected function hasLoggableColumns($event)

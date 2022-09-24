@@ -18,7 +18,8 @@ class ModelActivityLog extends Model
 
     /**
      * Define scope to return model activity log by subject of the activity
-     * @param object $subject
+     *
+     * @param  object  $subject
      * @return Builder
      */
     public function scopeSubjectBy(Builder $query, Model $subject)
@@ -28,9 +29,10 @@ class ModelActivityLog extends Model
             ->where('subject_id', $subject->getKey());
     }
 
-     /**
+    /**
      * Define scope to return model activity log by event
-     * @param string $event
+     *
+     * @param  string  $event
      * @return Builder
      */
     public function scopeEvent(Builder $query, string $event): Builder
@@ -49,4 +51,3 @@ class ModelActivityLog extends Model
         return $this->properties;
     }
 }
-
