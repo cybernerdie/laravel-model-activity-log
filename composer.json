@@ -61,10 +61,7 @@
         "laravel": {
             "providers": [
                 "Cybernerdie\\ModelActivityLog\\ModelActivityLogServiceProvider"
-            ],
-            "aliases": {
-                "ModelActivityLog": "Cybernerdie\\ModelActivityLog\\Facades\\ModelActivityLog"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
