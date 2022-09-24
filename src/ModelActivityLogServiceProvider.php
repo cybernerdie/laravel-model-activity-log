@@ -2,7 +2,6 @@
 
 namespace Cybernerdie\ModelActivityLog;
 
-use Cybernerdie\ModelActivityLog\Commands\ModelActivityLogCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,6 @@ class ModelActivityLogServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-model-activity-log')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-model-activity-log_table')
-            ->hasCommand(ModelActivityLogCommand::class);
+            ->hasMigration('create_model_activity_log_table');
     }
 }
