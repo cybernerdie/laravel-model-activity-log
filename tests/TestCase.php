@@ -29,7 +29,7 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-model-activity-log_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_model_activity_log_table.php.stub';
         $migration->up();
         */
     }
