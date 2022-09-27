@@ -16,6 +16,6 @@ class ModelActivityLogServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-model-activity-log')
-            ->hasMigration('create_model_activity_log_table');
+            ->hasMigration('create_model_activity_logs_table');
     }
 }
