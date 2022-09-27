@@ -19,8 +19,8 @@ class ModelActivityLog extends Model
     /**
      * Define scope to return model activity log by subject of the activity
      *
-     * @param  object  $subject
-     * @return Builder
+     * @param  Model $subject
+     * @return Builder $query
      */
     public function scopeSubjectBy(Builder $query, Model $subject)
     {
