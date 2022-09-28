@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/cybernerdie/laravel-model-activity-log/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/cybernerdie/laravel-model-activity-log/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/cybernerdie/laravel-model-activity-log.svg?style=flat-square)](https://packagist.org/packages/cybernerdie/laravel-model-activity-log)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+This package logs model activities inside your Laravel application.
 
 ## Installation
 
