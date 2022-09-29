@@ -47,9 +47,11 @@ Optionally, you can add columns in your model that you want to ignore when event
  protected static $columnsToIgnore = ['email'];
 ```
 
+Retrieve activities for a model:
+
 ```php
-$modelActivityLog = new Cybernerdie\ModelActivityLog();
-echo $modelActivityLog->echoPhrase('Hello, Cybernerdie!');
+$user = User::find(1);
+$activities = ModelActivityLog::subjectBy($user)->get();
 ```
 
 ## Testing
