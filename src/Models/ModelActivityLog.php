@@ -4,7 +4,6 @@ namespace Cybernerdie\ModelActivityLog\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Schema\Builder;
 
 class ModelActivityLog extends Model
 {
