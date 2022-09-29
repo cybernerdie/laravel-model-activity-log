@@ -15,10 +15,15 @@ You can install the package via composer:
 composer require cybernerdie/laravel-model-activity-log
 ```
 
-You can publish and run the migrations with:
+You can publish the migrations with:
 
 ```bash
 php artisan vendor:publish --provider="Cybernerdie\\ModelActivityLog\\ModelActivityLogServiceProvider"
+```
+
+You can run the migrations with:
+
+```bash
 php artisan migrate
 ```
 
