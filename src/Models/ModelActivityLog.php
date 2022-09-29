@@ -42,7 +42,7 @@ class ModelActivityLog extends Model
 
     /**
      * Return the properties of the model activity log
-     *  
+     *
      * @return array
      */
     public function changes()
