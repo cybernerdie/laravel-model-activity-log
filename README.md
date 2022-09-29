@@ -35,6 +35,18 @@ Add the trait to your model and also import the class:
 use RecordModelActivity;
 ```
 
+Optionally, you can set the events to be recorded for your model:
+
+```php
+protected static $eventsToRecord = ['created', 'updated'];
+```
+
+Optionally, you can add columns in your model that you want to ignore when events are recorded:
+
+```php
+ protected static $columnsToIgnore = ['email'];
+```
+
 ```php
 $modelActivityLog = new Cybernerdie\ModelActivityLog();
 echo $modelActivityLog->echoPhrase('Hello, Cybernerdie!');
