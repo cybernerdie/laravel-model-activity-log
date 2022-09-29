@@ -35,7 +35,7 @@ class ModelActivityLog extends Model
      * @param  string  $event
      * @return Builder
      */
-    public function scopeEvent(Builder $query, string $event): Builder
+    public function scopeEvent($query, string $event): Builder
     {
         return $query
             ->where('event', $event);
