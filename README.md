@@ -54,6 +54,17 @@ $user = User::find(1);
 $activities = ModelActivityLog::subjectBy($user)->get();
 ```
 
+Retrieve activities by event type:
+
+```php
+$activities = ModelActivityLog::event('created')->get();
+```
+
+Retrieve changes for a specific activity:
+
+```php
+$activities = ModelActivityLog::find(1)->changes();
+```
 ## Testing
 
 ```bash
