@@ -22,7 +22,7 @@ class ModelActivityLog extends Model
      * @param  Model  $subject
      * @return Builder $query
      */
-    public function scopeSubjectBy(Builder $query, Model $subject)
+    public function scopeSubjectBy($query, Model $subject)
     {
         return $query
             ->where('subject_type', $subject->getMorphClass())
