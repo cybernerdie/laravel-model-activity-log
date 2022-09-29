@@ -29,6 +29,12 @@ php artisan migrate
 
 ## Usage
 
+Add the trait to your model and also import the class:
+
+```php
+use RecordModelActivity;
+```
+
 ```php
 $modelActivityLog = new Cybernerdie\ModelActivityLog();
 echo $modelActivityLog->echoPhrase('Hello, Cybernerdie!');
